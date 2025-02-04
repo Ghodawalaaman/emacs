@@ -21,6 +21,10 @@
 (use-package emms :ensure t)
 (use-package 0x0 :ensure t)
 (use-package mastodon :ensure t)
+(use-package expand-region :ensure t)
+
+(require 'expand-region)
+(global-set-key (kbd "C-=") 'er/expand-region)
 
 (setq erc-autojoin-channels-alist
       '(("Libera.chat" "#emacs" "#bash" "#bsah" "#archlinux" "#gentoo" "#rust")))
