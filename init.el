@@ -22,6 +22,7 @@
 (use-package 0x0 :ensure t)
 (use-package mastodon :ensure t)
 (use-package expand-region :ensure t)
+(use-package rust-mode :ensure t)
 
 (require 'expand-region)
 (global-set-key (kbd "C-=") 'er/expand-region)
