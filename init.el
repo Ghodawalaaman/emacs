@@ -20,9 +20,13 @@
 (use-package lem :ensure t)
 (use-package emms :ensure t)
 (use-package 0x0 :ensure t)
+(use-package mastodon :ensure t)
 
 (setq erc-autojoin-channels-alist
-          '(("Libera.chat" "#emacs" "#bash" "#bsah" "#archlinux" "#gentoo" "#rust")))
+      '(("Libera.chat" "#emacs" "#bash" "#bsah" "#archlinux" "#gentoo" "#rust")))
+
+(setq mastodon-instance-url "https://social.linux.pizza"
+      mastodon-active-user "unknown231")
 
 (require 'emms-setup)
 (emms-standard) ;; Initialize EMMS with standard settings
