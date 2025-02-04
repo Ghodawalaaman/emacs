@@ -16,10 +16,10 @@
   :ensure t
   :config
   (load-theme 'gruvbox-dark-medium t))
-(use-package erc)
-(use-package lem)
-(use-package emms)
-(use-package 0x0)
+(use-package erc :ensure t)
+(use-package lem :ensure t)
+(use-package emms :ensure t)
+(use-package 0x0 :ensure t)
 
 (setq erc-autojoin-channels-alist
           '(("Libera.chat" "#emacs" "#bash" "#bsah" "#archlinux" "#gentoo" "#rust")))
@@ -32,3 +32,15 @@
 (global-set-key (kbd "C-c e -") 'emms-volume-lower)
 
 (setq lem-instance-url "https://lemmy.ca")
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages '(0x0 emms-setup emms lem gruvbox-theme)))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
