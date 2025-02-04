@@ -19,6 +19,7 @@
 (use-package erc)
 (use-package lem)
 (use-package emms)
+(use-package 0x0)
 
 (setq erc-autojoin-channels-alist
           '(("Libera.chat" "#emacs" "#bash" "#bsah" "#archlinux" "#gentoo" "#rust")))
