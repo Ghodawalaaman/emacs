@@ -10,7 +10,7 @@
 (tool-bar-mode -1) ;; remove toolbar
 (setq inhibit-splash-screen t);; remove the splash screen
 
-(set-frame-font "Fira Code-16" nil t);; setting some good fonts
+(set-frame-font "Fira Code-14" nil t);; setting some good fonts
 
 (use-package gruvbox-theme
   :ensure t
@@ -28,7 +28,7 @@
 (global-set-key (kbd "C-=") 'er/expand-region)
 
 (setq erc-autojoin-channels-alist
-      '(("Libera.chat" "#emacs" "#bash" "#bsah" "#archlinux" "#gentoo" "#rust")))
+      '(("Libera.chat" "#emacs" "#bash" "#bsah" "#archlinux" "#gentoo" "#rust" "#gemini")))
 
 (setq mastodon-instance-url "https://social.linux.pizza"
       mastodon-active-user "unknown231")
