@@ -23,7 +23,6 @@
 (use-package mastodon :ensure t)
 (use-package expand-region :ensure t)
 (use-package rust-mode :ensure t)
-(use-package elpher :ensure t)
 
 (require 'expand-region)
 (global-set-key (kbd "C-=") 'er/expand-region)
@@ -42,16 +41,3 @@
 (global-set-key (kbd "C-c e -") 'emms-volume-lower)
 
 (setq lem-instance-url "https://lemmy.ca")
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(package-selected-packages
-   '(elpher rust-mode mastodon lem gruvbox-theme expand-region emms elcord 0x0)))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
