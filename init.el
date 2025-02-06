@@ -23,12 +23,20 @@
 (use-package mastodon :ensure t)
 (use-package expand-region :ensure t)
 (use-package rust-mode :ensure t)
+(use-package elpher :ensure t)
+(use-package multiple-cursors :ensure t)
+
+(require 'multiple-cursors)
+(global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
+(global-set-key (kbd "C->") 'mc/mark-next-like-this)
+(global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
+(global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
 
 (require 'expand-region)
 (global-set-key (kbd "C-=") 'er/expand-region)
 
 (setq erc-autojoin-channels-alist
-      '(("Libera.chat" "#emacs" "#bash" "#bsah" "#archlinux" "#gentoo" "#rust" "#gemini")))
+      '(("Libera.chat" "#emacs" "#bash" "#bsah" "#archlinux" "#gentoo" "#rust" "#gemini" "#git")))
 
 (setq mastodon-instance-url "https://social.linux.pizza"
       mastodon-active-user "unknown231")
