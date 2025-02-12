@@ -34,7 +34,7 @@
 (global-set-key (kbd "C-=") 'er/expand-region)
 
 (setq erc-autojoin-channels-alist
-      '(("Libera.chat" "#emacs" "#bash" "#bsah" "#archlinux" "#gentoo" "#rust" "#gemini" "#git" "#lisp")))
+      '(("Libera.chat" "#emacs" "#bash" "#bsah" "#archlinux" "#gentoo" "#rust" "#gemini" "#git" "#lisp" "#forth")))
 
 (require 'emms-setup)
 (emms-standard) ;; Initialize EMMS with standard settings
