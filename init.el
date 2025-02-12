@@ -42,5 +42,3 @@
 (setq emms-player-mpv-parameters '("--volume=50"))
 (global-set-key (kbd "C-c e +") 'emms-volume-raise)
 (global-set-key (kbd "C-c e -") 'emms-volume-lower)
-
-(setq lem-instance-url "https://lemmy.ca")
